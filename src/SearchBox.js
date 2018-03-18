@@ -33,10 +33,6 @@ export default class SearchBox extends Component {
   };
 
 
-  getResults = (type) => {
-    return this.props.search(type); 
-  }
-
   componentDidUpdate(prevProps) {
     const { reset } = this.props;
     const { reset: preReset } = prevProps;
