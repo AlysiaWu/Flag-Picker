@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  padding: 20px;
+}
+
+.bg {
+  background-image: url('world-map-large.png');
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -99;
 }
 
 .App-logo {
@@ -20,6 +30,53 @@
 
 .App-intro {
   font-size: large;
+  display: flex;
+}
+/*ToDo: style better*/
+.App-intro .section {
+  width: 30%;
+  padding: 20px;
+}
+
+/*menu item style*/
+.search-box li {
+  display: block;
+  text-align: left;
+  border: 1px solid silver;
+  padding: 5px;
+}
+
+.search-box .dropdown-item {
+  text-decoration: none;
+  color: black;
+
+}
+
+.search-box .dropdown-menu {
+  padding-left: 0 !important;
+}
+
+.search-box .rbt-input {
+  border: 1px solid silver;
+  height: 30px;
+}
+
+.search-box .rbt-input-wrapper input{
+  padding: 6px !important;
+  font-size: 14px;
+}
+
+.rbt-token {
+  display: none;
+}
+
+.search-box .sr-only {
+  display: none;
+}
+
+.flags-chosen .flag {
+  font-size: 40px;
+  display: inline-block;
 }
 
 @keyframes App-logo-spin {
